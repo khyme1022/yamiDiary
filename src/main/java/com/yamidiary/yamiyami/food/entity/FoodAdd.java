@@ -1,6 +1,6 @@
-package com.yamidiary.yamiyami.diary.entity;
+package com.yamidiary.yamiyami.food.entity;
 
-import com.yamidiary.yamiyami.food.entity.Food;
+import com.yamidiary.yamiyami.diary.entity.Diary;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -15,12 +15,12 @@ public class FoodAdd {
     @Column(name = "FOOD_FOLLOW_CODE", nullable = false, updatable = false)
     private int foodFollowCode; // 음식 일기 연결 코드
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "DIARY_NO")
     @ToString.Exclude
     private Diary diaryNo; // 외래키 (일기 번호)
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "FOOD_NO")
     @ToString.Exclude
     private Food foodNo; // 외래키 (음식 번호)
