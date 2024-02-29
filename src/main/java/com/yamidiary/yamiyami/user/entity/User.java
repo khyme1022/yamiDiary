@@ -66,25 +66,25 @@ public class User implements UserDetails {
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @Override
     public boolean isAccountNonExpired() {
-        return false;
+        return true;
     } // 유저의 계정이 만료되었는 지 리턴 true 만료되지 않음
     // 
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) // 유저의 계정이 잠겨있는 지 리턴 true 잠기지 않음
     @Override
     public boolean isAccountNonLocked() {
-        return false;
+        return true;
     }
 
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @Override
     public boolean isCredentialsNonExpired() {
-        return false;
+        return true;
     } // 비밀번호 만료 체크
 
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @Override
     public boolean isEnabled() {
-        return false;
+        return true;
     } // 계정 활성화 체크
 
 }

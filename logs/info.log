@@ -31,3 +31,692 @@ This generated password is for development use only. Your security configuration
 [2024-02-14 18:25:55.502] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
 [2024-02-14 18:25:55.504] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
 [2024-02-14 18:25:55.506] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2024-03-01 04:48:02.602] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication Starting YamiyamiApplication using Java 17.0.10 with PID 7292 (D:\IntelliJProj\yamiyami\target\classes started by khyme in D:\IntelliJProj\yamiyami)
+[2024-03-01 04:48:02.604] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication No active profile set, falling back to 1 default profile: "default"
+[2024-03-01 04:48:03.298] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-03-01 04:48:03.317] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+[2024-03-01 04:48:03.741] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port 8080 (http)
+[2024-03-01 04:48:03.749] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2024-03-01 04:48:03.750] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2024-03-01 04:48:03.751] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.18]
+[2024-03-01 04:48:03.809] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2024-03-01 04:48:03.810] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1037 ms
+[2024-03-01 04:48:03.919] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-03-01 04:48:03.974] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 6.4.1.Final
+[2024-03-01 04:48:04.001] [INFO ] [main] org.hibernate.cache.internal.RegionFactoryInitiator HHH000026: Second-level cache disabled
+[2024-03-01 04:48:04.172] [INFO ] [main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-03-01 04:48:04.191] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2024-03-01 04:48:04.273] [INFO ] [main] com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Added connection org.mariadb.jdbc.Connection@23c05889
+[2024-03-01 04:48:04.275] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2024-03-01 04:48:04.462] [ERROR] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Failed to initialize JPA EntityManagerFactory: Entity classes [com.yamidiary.yamiyami.diary.entity.FoodAdd] and [com.yamidiary.yamiyami.food.entity.FoodAdd] share the entity name 'FOOD_ADD' (entity names must be distinct)
+[2024-03-01 04:48:04.463] [WARN ] [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity classes [com.yamidiary.yamiyami.diary.entity.FoodAdd] and [com.yamidiary.yamiyami.food.entity.FoodAdd] share the entity name 'FOOD_ADD' (entity names must be distinct)
+[2024-03-01 04:48:04.463] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2024-03-01 04:48:04.473] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2024-03-01 04:48:04.475] [INFO ] [main] org.apache.catalina.core.StandardService Stopping service [Tomcat]
+[2024-03-01 04:48:04.484] [INFO ] [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[2024-03-01 04:48:04.495] [ERROR] [main] org.springframework.boot.SpringApplication Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity classes [com.yamidiary.yamiyami.diary.entity.FoodAdd] and [com.yamidiary.yamiyami.food.entity.FoodAdd] share the entity name 'FOOD_ADD' (entity names must be distinct)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1773)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1231)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:949)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.yamidiary.yamiyami.YamiyamiApplication.main(YamiyamiApplication.java:10)
+Caused by: org.hibernate.DuplicateMappingException: Entity classes [com.yamidiary.yamiyami.diary.entity.FoodAdd] and [com.yamidiary.yamiyami.food.entity.FoodAdd] share the entity name 'FOOD_ADD' (entity names must be distinct)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.addEntityBinding(InFlightMetadataCollectorImpl.java:339)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:245)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:423)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:256)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:279)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:322)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1820)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1769)
+	... 16 common frames omitted
+[2024-03-01 04:50:18.453] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication Starting YamiyamiApplication using Java 17.0.10 with PID 616 (D:\IntelliJProj\yamiyami\target\classes started by khyme in D:\IntelliJProj\yamiyami)
+[2024-03-01 04:50:18.455] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication No active profile set, falling back to 1 default profile: "default"
+[2024-03-01 04:50:19.052] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-03-01 04:50:19.071] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+[2024-03-01 04:50:19.448] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port 8080 (http)
+[2024-03-01 04:50:19.460] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2024-03-01 04:50:19.462] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2024-03-01 04:50:19.462] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.18]
+[2024-03-01 04:50:19.517] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2024-03-01 04:50:19.517] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 914 ms
+[2024-03-01 04:50:19.621] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-03-01 04:50:19.663] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 6.4.1.Final
+[2024-03-01 04:50:19.683] [INFO ] [main] org.hibernate.cache.internal.RegionFactoryInitiator HHH000026: Second-level cache disabled
+[2024-03-01 04:50:19.820] [INFO ] [main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-03-01 04:50:19.836] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2024-03-01 04:50:19.898] [INFO ] [main] com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Added connection org.mariadb.jdbc.Connection@33a71d23
+[2024-03-01 04:50:19.899] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2024-03-01 04:50:20.555] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-03-01 04:50:21.593] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-01 04:50:21.612] [WARN ] [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtTokenProvider' defined in file [D:\IntelliJProj\yamiyami\target\classes\com\yamidiary\yamiyami\config\security\JwtTokenProvider.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userDetailsServiceImpl' defined in file [D:\IntelliJProj\yamiyami\target\classes\com\yamidiary\yamiyami\user\service\impl\UserDetailsServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.yamidiary.yamiyami.user.repository.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[2024-03-01 04:50:21.613] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-01 04:50:21.615] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2024-03-01 04:50:21.617] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2024-03-01 04:50:21.617] [INFO ] [main] org.apache.catalina.core.StandardService Stopping service [Tomcat]
+[2024-03-01 04:50:21.624] [INFO ] [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[2024-03-01 04:50:21.636] [ERROR] [main] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.yamidiary.yamiyami.user.service.impl.UserDetailsServiceImpl required a bean of type 'com.yamidiary.yamiyami.user.repository.UserRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.yamidiary.yamiyami.user.repository.UserRepository' in your configuration.
+
+[2024-03-01 04:52:30.817] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication Starting YamiyamiApplication using Java 17.0.10 with PID 11320 (D:\IntelliJProj\yamiyami\target\classes started by khyme in D:\IntelliJProj\yamiyami)
+[2024-03-01 04:52:30.818] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication No active profile set, falling back to 1 default profile: "default"
+[2024-03-01 04:52:31.449] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-03-01 04:52:31.495] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interface.
+[2024-03-01 04:52:31.880] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port 8080 (http)
+[2024-03-01 04:52:31.886] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2024-03-01 04:52:31.887] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2024-03-01 04:52:31.888] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.18]
+[2024-03-01 04:52:31.947] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2024-03-01 04:52:31.948] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 967 ms
+[2024-03-01 04:52:32.052] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-03-01 04:52:32.093] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 6.4.1.Final
+[2024-03-01 04:52:32.114] [INFO ] [main] org.hibernate.cache.internal.RegionFactoryInitiator HHH000026: Second-level cache disabled
+[2024-03-01 04:52:32.256] [INFO ] [main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-03-01 04:52:32.273] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2024-03-01 04:52:32.337] [INFO ] [main] com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Added connection org.mariadb.jdbc.Connection@71262020
+[2024-03-01 04:52:32.338] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2024-03-01 04:52:32.949] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-03-01 04:52:33.942] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-01 04:52:34.166] [INFO ] [main] com.yamidiary.yamiyami.config.security.JwtTokenProvider [init] JwtTokenProvider 내 secretKey 초기화 시작
+[2024-03-01 04:52:34.166] [INFO ] [main] com.yamidiary.yamiyami.config.security.JwtTokenProvider [init] JwtTokenProvider 내 secretKey 초기화 완료
+[2024-03-01 04:52:34.255] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-03-01 04:52:34.439] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2643c33f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c1fd5aa, org.springframework.security.web.context.SecurityContextHolderFilter@1b4bc7b9, org.springframework.security.web.header.HeaderWriterFilter@19370af1, org.springframework.web.filter.CorsFilter@4bfaff23, org.springframework.security.web.authentication.logout.LogoutFilter@2605433, com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter@47bae235, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16bbb59c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@538fb761, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f588bc6, org.springframework.security.web.session.SessionManagementFilter@36d7e8d2, org.springframework.security.web.access.ExceptionTranslationFilter@2dc54b50, org.springframework.security.web.access.intercept.AuthorizationFilter@baf87a5]
+[2024-03-01 04:52:34.614] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2024-03-01 04:52:34.629] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port 8080 (http) with context path ''
+[2024-03-01 04:52:34.636] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication Started YamiyamiApplication in 4.132 seconds (process running for 4.428)
+[2024-03-01 04:55:29.968] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-01 04:55:29.969] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2024-03-01 04:55:29.971] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2024-03-01 04:56:54.821] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication Starting YamiyamiApplication using Java 17.0.10 with PID 14228 (D:\IntelliJProj\yamiyami\target\classes started by khyme in D:\IntelliJProj\yamiyami)
+[2024-03-01 04:56:54.822] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication No active profile set, falling back to 1 default profile: "default"
+[2024-03-01 04:56:55.417] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-03-01 04:56:55.458] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
+[2024-03-01 04:56:55.853] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port 8080 (http)
+[2024-03-01 04:56:55.860] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2024-03-01 04:56:55.861] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2024-03-01 04:56:55.861] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.18]
+[2024-03-01 04:56:55.923] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2024-03-01 04:56:55.924] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 956 ms
+[2024-03-01 04:56:56.025] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-03-01 04:56:56.064] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 6.4.1.Final
+[2024-03-01 04:56:56.085] [INFO ] [main] org.hibernate.cache.internal.RegionFactoryInitiator HHH000026: Second-level cache disabled
+[2024-03-01 04:56:56.233] [INFO ] [main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-03-01 04:56:56.252] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2024-03-01 04:56:56.326] [INFO ] [main] com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Added connection org.mariadb.jdbc.Connection@43ab0659
+[2024-03-01 04:56:56.327] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2024-03-01 04:56:56.948] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-03-01 04:56:57.988] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-01 04:56:58.197] [INFO ] [main] com.yamidiary.yamiyami.config.security.JwtTokenProvider [init] JwtTokenProvider 내 secretKey 초기화 시작
+[2024-03-01 04:56:58.197] [INFO ] [main] com.yamidiary.yamiyami.config.security.JwtTokenProvider [init] JwtTokenProvider 내 secretKey 초기화 완료
+[2024-03-01 04:56:58.295] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-03-01 04:56:58.470] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@763a72da, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50e32998, org.springframework.security.web.context.SecurityContextHolderFilter@67836d4, org.springframework.security.web.header.HeaderWriterFilter@54dc163a, org.springframework.web.filter.CorsFilter@5fc76532, org.springframework.security.web.authentication.logout.LogoutFilter@3f2bf80d, com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter@2e268c19, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20e4e27f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36d7e8d2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@baf87a5, org.springframework.security.web.session.SessionManagementFilter@53b60595, org.springframework.security.web.access.ExceptionTranslationFilter@611ffa8d, org.springframework.security.web.access.intercept.AuthorizationFilter@281a54b]
+[2024-03-01 04:56:58.636] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2024-03-01 04:56:58.651] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port 8080 (http) with context path ''
+[2024-03-01 04:56:58.659] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication Started YamiyamiApplication in 4.157 seconds (process running for 4.464)
+[2024-03-01 04:57:35.737] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-01 04:57:35.739] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2024-03-01 04:57:35.740] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2024-03-01 04:57:48.942] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication Starting YamiyamiApplication using Java 17.0.10 with PID 4212 (D:\IntelliJProj\yamiyami\target\classes started by khyme in D:\IntelliJProj\yamiyami)
+[2024-03-01 04:57:48.944] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication No active profile set, falling back to 1 default profile: "default"
+[2024-03-01 04:57:49.559] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-03-01 04:57:49.602] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
+[2024-03-01 04:57:50.018] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port 8080 (http)
+[2024-03-01 04:57:50.025] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2024-03-01 04:57:50.027] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2024-03-01 04:57:50.027] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.18]
+[2024-03-01 04:57:50.081] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2024-03-01 04:57:50.082] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 981 ms
+[2024-03-01 04:57:50.197] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-03-01 04:57:50.240] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 6.4.1.Final
+[2024-03-01 04:57:50.262] [INFO ] [main] org.hibernate.cache.internal.RegionFactoryInitiator HHH000026: Second-level cache disabled
+[2024-03-01 04:57:50.411] [INFO ] [main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-03-01 04:57:50.439] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2024-03-01 04:57:50.523] [INFO ] [main] com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Added connection org.mariadb.jdbc.Connection@25421809
+[2024-03-01 04:57:50.524] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2024-03-01 04:57:51.277] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-03-01 04:57:52.327] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-01 04:57:52.530] [INFO ] [main] com.yamidiary.yamiyami.config.security.JwtTokenProvider [init] JwtTokenProvider 내 secretKey 초기화 시작
+[2024-03-01 04:57:52.531] [INFO ] [main] com.yamidiary.yamiyami.config.security.JwtTokenProvider [init] JwtTokenProvider 내 secretKey 초기화 완료
+[2024-03-01 04:57:52.615] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-03-01 04:57:52.790] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5fc76532, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e268c19, org.springframework.security.web.context.SecurityContextHolderFilter@20e4e27f, org.springframework.security.web.header.HeaderWriterFilter@456beb8b, org.springframework.web.filter.CorsFilter@baf87a5, org.springframework.security.web.authentication.logout.LogoutFilter@729eef5f, com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter@42c9c0a1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@715ea64a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1cbb394b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2643c33f, org.springframework.security.web.session.SessionManagementFilter@7d7d7b1a, org.springframework.security.web.access.ExceptionTranslationFilter@54dc163a, org.springframework.security.web.access.intercept.AuthorizationFilter@763a72da]
+[2024-03-01 04:57:52.969] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2024-03-01 04:57:52.983] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port 8080 (http) with context path ''
+[2024-03-01 04:57:52.990] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication Started YamiyamiApplication in 4.382 seconds (process running for 4.677)
+[2024-03-01 04:57:54.119] [INFO ] [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-03-01 04:57:54.119] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2024-03-01 04:57:54.120] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 0 ms
+[2024-03-01 04:57:54.134] [INFO ] [http-nio-8080-exec-1] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 04:57:54.134] [INFO ] [http-nio-8080-exec-1] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 04:57:54.134] [INFO ] [http-nio-8080-exec-1] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 04:57:54.178] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 04:57:54.178] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 04:57:54.178] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 04:57:54.179] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.CustomAuthenticationEntryPoint [commence] 인증 실패로 response.sendError 발생
+[2024-03-01 04:57:54.234] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 04:57:54.234] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 04:57:54.234] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 04:57:54.235] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.CustomAuthenticationEntryPoint [commence] 인증 실패로 response.sendError 발생
+[2024-03-01 04:58:54.620] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-01 04:58:54.622] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2024-03-01 04:58:54.624] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2024-03-01 04:58:57.449] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication Starting YamiyamiApplication using Java 17.0.10 with PID 2220 (D:\IntelliJProj\yamiyami\target\classes started by khyme in D:\IntelliJProj\yamiyami)
+[2024-03-01 04:58:57.450] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication No active profile set, falling back to 1 default profile: "default"
+[2024-03-01 04:58:58.067] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-03-01 04:58:58.111] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+[2024-03-01 04:58:58.491] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port 8080 (http)
+[2024-03-01 04:58:58.497] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2024-03-01 04:58:58.499] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2024-03-01 04:58:58.499] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.18]
+[2024-03-01 04:58:58.562] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2024-03-01 04:58:58.563] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 958 ms
+[2024-03-01 04:58:58.664] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-03-01 04:58:58.705] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 6.4.1.Final
+[2024-03-01 04:58:58.726] [INFO ] [main] org.hibernate.cache.internal.RegionFactoryInitiator HHH000026: Second-level cache disabled
+[2024-03-01 04:58:58.869] [INFO ] [main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-03-01 04:58:58.887] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2024-03-01 04:58:58.954] [INFO ] [main] com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Added connection org.mariadb.jdbc.Connection@25421809
+[2024-03-01 04:58:58.956] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2024-03-01 04:58:59.592] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-03-01 04:59:00.644] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-01 04:59:00.839] [INFO ] [main] com.yamidiary.yamiyami.config.security.JwtTokenProvider [init] JwtTokenProvider 내 secretKey 초기화 시작
+[2024-03-01 04:59:00.840] [INFO ] [main] com.yamidiary.yamiyami.config.security.JwtTokenProvider [init] JwtTokenProvider 내 secretKey 초기화 완료
+[2024-03-01 04:59:00.923] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-03-01 04:59:01.089] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5fc76532, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e268c19, org.springframework.security.web.context.SecurityContextHolderFilter@20e4e27f, org.springframework.security.web.header.HeaderWriterFilter@456beb8b, org.springframework.web.filter.CorsFilter@baf87a5, org.springframework.security.web.authentication.logout.LogoutFilter@729eef5f, com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter@42c9c0a1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@715ea64a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1cbb394b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2643c33f, org.springframework.security.web.session.SessionManagementFilter@7d7d7b1a, org.springframework.security.web.access.ExceptionTranslationFilter@54dc163a, org.springframework.security.web.access.intercept.AuthorizationFilter@763a72da]
+[2024-03-01 04:59:01.246] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2024-03-01 04:59:01.259] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port 8080 (http) with context path ''
+[2024-03-01 04:59:01.266] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication Started YamiyamiApplication in 4.126 seconds (process running for 4.435)
+[2024-03-01 04:59:03.413] [INFO ] [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-03-01 04:59:03.413] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2024-03-01 04:59:03.414] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+[2024-03-01 04:59:03.426] [INFO ] [http-nio-8080-exec-1] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 04:59:03.426] [INFO ] [http-nio-8080-exec-1] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 04:59:03.426] [INFO ] [http-nio-8080-exec-1] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 04:59:03.464] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 04:59:03.464] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 04:59:03.464] [INFO ] [http-nio-8080-exec-6] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 04:59:03.464] [INFO ] [http-nio-8080-exec-4] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 04:59:03.464] [INFO ] [http-nio-8080-exec-6] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 04:59:03.464] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 04:59:03.464] [INFO ] [http-nio-8080-exec-5] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 04:59:03.464] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 04:59:03.464] [INFO ] [http-nio-8080-exec-4] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 04:59:03.464] [INFO ] [http-nio-8080-exec-6] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 04:59:03.464] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 04:59:03.464] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 04:59:03.464] [INFO ] [http-nio-8080-exec-5] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 04:59:03.464] [INFO ] [http-nio-8080-exec-4] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 04:59:03.464] [INFO ] [http-nio-8080-exec-5] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 04:59:03.637] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 04:59:03.637] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 04:59:03.637] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 04:59:03.637] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 04:59:03.638] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 04:59:03.638] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 04:59:03.638] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.CustomAuthenticationEntryPoint [commence] 인증 실패로 response.sendError 발생
+[2024-03-01 05:00:04.402] [INFO ] [http-nio-8080-exec-5] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:00:04.402] [INFO ] [http-nio-8080-exec-5] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:00:04.402] [INFO ] [http-nio-8080-exec-5] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:00:04.407] [INFO ] [http-nio-8080-exec-5] com.yamidiary.yamiyami.config.security.CustomAuthenticationEntryPoint [commence] 인증 실패로 response.sendError 발생
+[2024-03-01 05:00:28.303] [INFO ] [http-nio-8080-exec-4] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:00:28.303] [INFO ] [http-nio-8080-exec-4] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:00:28.304] [INFO ] [http-nio-8080-exec-4] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:00:28.316] [INFO ] [http-nio-8080-exec-6] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:00:28.316] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:00:28.316] [INFO ] [http-nio-8080-exec-6] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:00:28.316] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:00:28.316] [INFO ] [http-nio-8080-exec-9] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:00:28.316] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:00:28.316] [INFO ] [http-nio-8080-exec-10] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:00:28.316] [INFO ] [http-nio-8080-exec-6] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:00:28.316] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:00:28.316] [INFO ] [http-nio-8080-exec-9] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:00:28.316] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:00:28.316] [INFO ] [http-nio-8080-exec-10] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:00:28.316] [INFO ] [http-nio-8080-exec-9] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:00:28.316] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:00:28.316] [INFO ] [http-nio-8080-exec-10] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:00:28.385] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:00:28.385] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:00:28.385] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:00:28.385] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:00:28.385] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:00:28.385] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.CustomAuthenticationEntryPoint [commence] 인증 실패로 response.sendError 발생
+[2024-03-01 05:00:28.385] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:01:18.328] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-01 05:01:18.329] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2024-03-01 05:01:18.331] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2024-03-01 05:01:21.095] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication Starting YamiyamiApplication using Java 17.0.10 with PID 2616 (D:\IntelliJProj\yamiyami\target\classes started by khyme in D:\IntelliJProj\yamiyami)
+[2024-03-01 05:01:21.096] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication No active profile set, falling back to 1 default profile: "default"
+[2024-03-01 05:01:21.695] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-03-01 05:01:21.735] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
+[2024-03-01 05:01:22.117] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port 8080 (http)
+[2024-03-01 05:01:22.123] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2024-03-01 05:01:22.125] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2024-03-01 05:01:22.125] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.18]
+[2024-03-01 05:01:22.191] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2024-03-01 05:01:22.192] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 947 ms
+[2024-03-01 05:01:22.294] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-03-01 05:01:22.335] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 6.4.1.Final
+[2024-03-01 05:01:22.356] [INFO ] [main] org.hibernate.cache.internal.RegionFactoryInitiator HHH000026: Second-level cache disabled
+[2024-03-01 05:01:22.496] [INFO ] [main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-03-01 05:01:22.514] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2024-03-01 05:01:22.577] [INFO ] [main] com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Added connection org.mariadb.jdbc.Connection@1255de25
+[2024-03-01 05:01:22.578] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2024-03-01 05:01:23.205] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-03-01 05:01:24.220] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-01 05:01:24.427] [INFO ] [main] com.yamidiary.yamiyami.config.security.JwtTokenProvider [init] JwtTokenProvider 내 secretKey 초기화 시작
+[2024-03-01 05:01:24.428] [INFO ] [main] com.yamidiary.yamiyami.config.security.JwtTokenProvider [init] JwtTokenProvider 내 secretKey 초기화 완료
+[2024-03-01 05:01:24.518] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-03-01 05:01:24.698] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@72f91c91, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69d6fe75, org.springframework.security.web.context.SecurityContextHolderFilter@6dd50380, org.springframework.security.web.header.HeaderWriterFilter@67836d4, org.springframework.web.filter.CorsFilter@3d273300, org.springframework.security.web.authentication.logout.LogoutFilter@5a457aa1, com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter@3fe7c87c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@173da924, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a9e2c3b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c04685, org.springframework.security.web.session.SessionManagementFilter@5653429e, org.springframework.security.web.access.ExceptionTranslationFilter@2f9d47a3, org.springframework.security.web.access.intercept.AuthorizationFilter@318ca53a]
+[2024-03-01 05:01:24.864] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2024-03-01 05:01:24.879] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port 8080 (http) with context path ''
+[2024-03-01 05:01:24.886] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication Started YamiyamiApplication in 4.102 seconds (process running for 4.388)
+[2024-03-01 05:01:26.222] [INFO ] [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-03-01 05:01:26.222] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2024-03-01 05:01:26.223] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+[2024-03-01 05:01:26.235] [INFO ] [http-nio-8080-exec-1] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:01:26.236] [INFO ] [http-nio-8080-exec-1] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:01:26.236] [INFO ] [http-nio-8080-exec-1] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:01:26.272] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:01:26.272] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:01:26.272] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:01:26.272] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:01:26.272] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:01:26.272] [INFO ] [http-nio-8080-exec-4] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:01:26.272] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:01:26.272] [INFO ] [http-nio-8080-exec-5] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:01:26.272] [INFO ] [http-nio-8080-exec-4] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:01:26.272] [INFO ] [http-nio-8080-exec-6] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:01:26.272] [INFO ] [http-nio-8080-exec-5] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:01:26.273] [INFO ] [http-nio-8080-exec-4] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:01:26.273] [INFO ] [http-nio-8080-exec-6] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:01:26.273] [INFO ] [http-nio-8080-exec-5] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:01:26.273] [INFO ] [http-nio-8080-exec-6] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:01:26.347] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:01:26.347] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:01:26.348] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:01:26.348] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:01:26.348] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:01:26.348] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:01:26.349] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.CustomAuthenticationEntryPoint [commence] 인증 실패로 response.sendError 발생
+[2024-03-01 05:02:41.847] [INFO ] [http-nio-8080-exec-5] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:02:41.847] [INFO ] [http-nio-8080-exec-4] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:02:41.847] [INFO ] [http-nio-8080-exec-5] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:02:41.847] [INFO ] [http-nio-8080-exec-4] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:02:41.847] [INFO ] [http-nio-8080-exec-5] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:02:41.847] [INFO ] [http-nio-8080-exec-4] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:02:42.067] [INFO ] [http-nio-8080-exec-6] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:02:42.067] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:02:42.067] [INFO ] [http-nio-8080-exec-6] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:02:42.067] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:02:42.067] [INFO ] [http-nio-8080-exec-6] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:02:42.068] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:02:42.073] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:02:42.073] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:02:42.073] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:03:10.761] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:03:10.762] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:03:10.762] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:03:10.787] [INFO ] [http-nio-8080-exec-1] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:03:10.788] [INFO ] [http-nio-8080-exec-1] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:03:10.788] [INFO ] [http-nio-8080-exec-1] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:03:10.804] [INFO ] [http-nio-8080-exec-9] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:03:10.804] [INFO ] [http-nio-8080-exec-10] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:03:10.804] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:03:10.804] [INFO ] [http-nio-8080-exec-9] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:03:10.804] [INFO ] [http-nio-8080-exec-10] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:03:10.804] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:03:10.804] [INFO ] [http-nio-8080-exec-9] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:03:10.804] [INFO ] [http-nio-8080-exec-10] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:03:10.804] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:03:10.804] [INFO ] [http-nio-8080-exec-4] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:03:10.804] [INFO ] [http-nio-8080-exec-4] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:03:10.804] [INFO ] [http-nio-8080-exec-5] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:03:10.805] [INFO ] [http-nio-8080-exec-4] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:03:10.805] [INFO ] [http-nio-8080-exec-5] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:03:10.805] [INFO ] [http-nio-8080-exec-5] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:03:10.860] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:03:10.860] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:03:10.860] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:03:10.984] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:03:10.985] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:03:10.985] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:03:11.018] [INFO ] [http-nio-8080-exec-6] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:03:11.018] [INFO ] [http-nio-8080-exec-6] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:03:11.018] [INFO ] [http-nio-8080-exec-6] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:03:11.028] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:03:11.028] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:03:11.028] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:03:11.029] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.CustomAuthenticationEntryPoint [commence] 인증 실패로 response.sendError 발생
+[2024-03-01 05:05:41.576] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-01 05:05:41.577] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2024-03-01 05:05:41.579] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2024-03-01 05:05:44.459] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication Starting YamiyamiApplication using Java 17.0.10 with PID 9632 (D:\IntelliJProj\yamiyami\target\classes started by khyme in D:\IntelliJProj\yamiyami)
+[2024-03-01 05:05:44.461] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication No active profile set, falling back to 1 default profile: "default"
+[2024-03-01 05:05:45.059] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-03-01 05:05:45.100] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interface.
+[2024-03-01 05:05:45.485] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port 8080 (http)
+[2024-03-01 05:05:45.491] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2024-03-01 05:05:45.493] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2024-03-01 05:05:45.493] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.18]
+[2024-03-01 05:05:45.552] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2024-03-01 05:05:45.553] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 943 ms
+[2024-03-01 05:05:45.657] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-03-01 05:05:45.697] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 6.4.1.Final
+[2024-03-01 05:05:45.719] [INFO ] [main] org.hibernate.cache.internal.RegionFactoryInitiator HHH000026: Second-level cache disabled
+[2024-03-01 05:05:45.860] [INFO ] [main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-03-01 05:05:45.876] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2024-03-01 05:05:45.940] [INFO ] [main] com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Added connection org.mariadb.jdbc.Connection@43ab0659
+[2024-03-01 05:05:45.942] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2024-03-01 05:05:46.586] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-03-01 05:05:47.610] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-01 05:05:47.803] [INFO ] [main] com.yamidiary.yamiyami.config.security.JwtTokenProvider [init] JwtTokenProvider 내 secretKey 초기화 시작
+[2024-03-01 05:05:47.804] [INFO ] [main] com.yamidiary.yamiyami.config.security.JwtTokenProvider [init] JwtTokenProvider 내 secretKey 초기화 완료
+[2024-03-01 05:05:47.884] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-03-01 05:05:48.052] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@763a72da, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50e32998, org.springframework.security.web.context.SecurityContextHolderFilter@67836d4, org.springframework.security.web.header.HeaderWriterFilter@54dc163a, org.springframework.web.filter.CorsFilter@5fc76532, org.springframework.security.web.authentication.logout.LogoutFilter@3f2bf80d, com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter@2e268c19, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20e4e27f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36d7e8d2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@baf87a5, org.springframework.security.web.session.SessionManagementFilter@53b60595, org.springframework.security.web.access.ExceptionTranslationFilter@611ffa8d, org.springframework.security.web.access.intercept.AuthorizationFilter@281a54b]
+[2024-03-01 05:05:48.228] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2024-03-01 05:05:48.243] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port 8080 (http) with context path ''
+[2024-03-01 05:05:48.250] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication Started YamiyamiApplication in 4.095 seconds (process running for 4.38)
+[2024-03-01 05:05:51.439] [INFO ] [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-03-01 05:05:51.439] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2024-03-01 05:05:51.440] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+[2024-03-01 05:05:51.452] [INFO ] [http-nio-8080-exec-1] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:05:51.453] [INFO ] [http-nio-8080-exec-1] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:05:51.453] [INFO ] [http-nio-8080-exec-1] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:05:51.486] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:05:51.486] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:05:51.486] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:05:51.486] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:05:51.486] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:05:51.486] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:05:51.486] [INFO ] [http-nio-8080-exec-5] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:05:51.486] [INFO ] [http-nio-8080-exec-4] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:05:51.486] [INFO ] [http-nio-8080-exec-5] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:05:51.486] [INFO ] [http-nio-8080-exec-4] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:05:51.486] [INFO ] [http-nio-8080-exec-5] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:05:51.486] [INFO ] [http-nio-8080-exec-6] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:05:51.486] [INFO ] [http-nio-8080-exec-4] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:05:51.487] [INFO ] [http-nio-8080-exec-6] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:05:51.487] [INFO ] [http-nio-8080-exec-6] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:05:51.671] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:05:51.671] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:05:51.671] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:05:51.671] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:05:51.672] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:05:51.672] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:05:51.696] [INFO ] [http-nio-8080-exec-9] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:05:51.697] [INFO ] [http-nio-8080-exec-9] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:05:51.697] [INFO ] [http-nio-8080-exec-9] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:05:51.777] [INFO ] [http-nio-8080-exec-9] org.springdoc.api.AbstractOpenApiResource Init duration for springdoc-openapi is: 74 ms
+[2024-03-01 05:13:33.759] [INFO ] [http-nio-8080-exec-4] org.apache.coyote.http11.Http11Processor Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [MGLNDD_118.44.198.232_80800x0a...]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:264)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+[2024-03-01 05:14:41.900] [INFO ] [http-nio-8080-exec-6] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:14:41.900] [INFO ] [http-nio-8080-exec-6] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:14:41.900] [INFO ] [http-nio-8080-exec-6] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:14:41.912] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:14:41.912] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:14:41.912] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:14:41.912] [INFO ] [http-nio-8080-exec-9] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:14:41.912] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:14:41.912] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:14:41.912] [INFO ] [http-nio-8080-exec-9] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:14:41.912] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:14:41.912] [INFO ] [http-nio-8080-exec-9] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:14:41.912] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:14:41.912] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:14:41.912] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:14:41.912] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:14:41.913] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:14:41.913] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:14:42.044] [INFO ] [http-nio-8080-exec-10] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:14:42.044] [INFO ] [http-nio-8080-exec-5] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:14:42.044] [INFO ] [http-nio-8080-exec-10] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:14:42.044] [INFO ] [http-nio-8080-exec-5] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:14:42.044] [INFO ] [http-nio-8080-exec-10] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:14:42.044] [INFO ] [http-nio-8080-exec-5] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:14:42.054] [INFO ] [http-nio-8080-exec-1] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:14:42.054] [INFO ] [http-nio-8080-exec-1] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:14:42.054] [INFO ] [http-nio-8080-exec-1] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:18:11.304] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 05:18:11.304] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 05:18:11.304] [INFO ] [http-nio-8080-exec-2] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 05:24:27.161] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-01 05:24:27.162] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2024-03-01 05:24:27.164] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2024-03-01 07:48:27.851] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication Starting YamiyamiApplication using Java 17.0.10 with PID 7968 (D:\IntelliJProj\yamiyami\target\classes started by khyme in D:\IntelliJProj\yamiyami)
+[2024-03-01 07:48:27.853] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication No active profile set, falling back to 1 default profile: "default"
+[2024-03-01 07:48:28.785] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-03-01 07:48:28.828] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
+[2024-03-01 07:48:29.256] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port 8080 (http)
+[2024-03-01 07:48:29.263] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2024-03-01 07:48:29.265] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2024-03-01 07:48:29.265] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.18]
+[2024-03-01 07:48:29.329] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2024-03-01 07:48:29.330] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1314 ms
+[2024-03-01 07:48:29.435] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-03-01 07:48:29.489] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 6.4.1.Final
+[2024-03-01 07:48:29.517] [INFO ] [main] org.hibernate.cache.internal.RegionFactoryInitiator HHH000026: Second-level cache disabled
+[2024-03-01 07:48:29.681] [INFO ] [main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-03-01 07:48:29.703] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2024-03-01 07:48:29.786] [INFO ] [main] com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Added connection org.mariadb.jdbc.Connection@62158991
+[2024-03-01 07:48:29.787] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2024-03-01 07:48:30.450] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-03-01 07:48:31.508] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-01 07:48:31.714] [INFO ] [main] com.yamidiary.yamiyami.config.security.JwtTokenProvider [init] JwtTokenProvider 내 secretKey 초기화 시작
+[2024-03-01 07:48:31.715] [INFO ] [main] com.yamidiary.yamiyami.config.security.JwtTokenProvider [init] JwtTokenProvider 내 secretKey 초기화 완료
+[2024-03-01 07:48:31.799] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-03-01 07:48:31.984] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7f588bc6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3da8a302, org.springframework.security.web.context.SecurityContextHolderFilter@163cd4a6, org.springframework.security.web.header.HeaderWriterFilter@16a89351, org.springframework.web.filter.CorsFilter@21b75073, org.springframework.security.web.authentication.logout.LogoutFilter@335cbcbd, com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter@318ca53a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5653429e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78c9c38a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ab11e76, org.springframework.security.web.session.SessionManagementFilter@12d33d7a, org.springframework.security.web.access.ExceptionTranslationFilter@60515ab1, org.springframework.security.web.access.intercept.AuthorizationFilter@4bfaff23]
+[2024-03-01 07:48:32.135] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:48:32.135] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='/v3/api-docs']
+[2024-03-01 07:48:32.135] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:48:32.135] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='/swagger-resources/**']
+[2024-03-01 07:48:32.135] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:48:32.135] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='/swagger-ui.html']
+[2024-03-01 07:48:32.135] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:48:32.135] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='/webjars/**']
+[2024-03-01 07:48:32.135] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='sign-api/exception']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:48:32.135] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='sign-api/exception']
+[2024-03-01 07:48:32.135] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:48:32.135] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='/swagger-ui/**']
+[2024-03-01 07:48:32.160] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2024-03-01 07:48:32.175] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port 8080 (http) with context path ''
+[2024-03-01 07:48:32.181] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication Started YamiyamiApplication in 4.678 seconds (process running for 5.025)
+[2024-03-01 07:48:37.639] [INFO ] [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-03-01 07:48:37.639] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2024-03-01 07:48:37.640] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+[2024-03-01 07:48:37.918] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 07:48:37.918] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 07:48:37.918] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 07:48:37.920] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.CustomAuthenticationEntryPoint [commence] 인증 실패로 response.sendError 발생
+[2024-03-01 07:51:04.458] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 07:51:04.458] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 07:51:04.458] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 07:51:04.458] [INFO ] [http-nio-8080-exec-7] com.yamidiary.yamiyami.config.security.CustomAuthenticationEntryPoint [commence] 인증 실패로 response.sendError 발생
+[2024-03-01 07:51:04.503] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 07:51:04.503] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 07:51:04.503] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 07:51:04.503] [INFO ] [http-nio-8080-exec-8] com.yamidiary.yamiyami.config.security.CustomAuthenticationEntryPoint [commence] 인증 실패로 response.sendError 발생
+[2024-03-01 07:51:21.891] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-01 07:51:21.893] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2024-03-01 07:51:21.894] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2024-03-01 07:51:24.709] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication Starting YamiyamiApplication using Java 17.0.10 with PID 16216 (D:\IntelliJProj\yamiyami\target\classes started by khyme in D:\IntelliJProj\yamiyami)
+[2024-03-01 07:51:24.710] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication No active profile set, falling back to 1 default profile: "default"
+[2024-03-01 07:51:25.317] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-03-01 07:51:25.360] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
+[2024-03-01 07:51:25.758] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port 8080 (http)
+[2024-03-01 07:51:25.764] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2024-03-01 07:51:25.766] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2024-03-01 07:51:25.766] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.18]
+[2024-03-01 07:51:25.828] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2024-03-01 07:51:25.829] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 972 ms
+[2024-03-01 07:51:25.929] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-03-01 07:51:25.970] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 6.4.1.Final
+[2024-03-01 07:51:25.992] [INFO ] [main] org.hibernate.cache.internal.RegionFactoryInitiator HHH000026: Second-level cache disabled
+[2024-03-01 07:51:26.135] [INFO ] [main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-03-01 07:51:26.153] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2024-03-01 07:51:26.224] [INFO ] [main] com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Added connection org.mariadb.jdbc.Connection@42e202d7
+[2024-03-01 07:51:26.225] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2024-03-01 07:51:26.878] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-03-01 07:51:27.889] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-01 07:51:28.089] [INFO ] [main] com.yamidiary.yamiyami.config.security.JwtTokenProvider [init] JwtTokenProvider 내 secretKey 초기화 시작
+[2024-03-01 07:51:28.090] [INFO ] [main] com.yamidiary.yamiyami.config.security.JwtTokenProvider [init] JwtTokenProvider 내 secretKey 초기화 완료
+[2024-03-01 07:51:28.176] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-03-01 07:51:28.352] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4bfaff23, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47bae235, org.springframework.security.web.context.SecurityContextHolderFilter@16bbb59c, org.springframework.security.web.header.HeaderWriterFilter@60515ab1, org.springframework.web.filter.CorsFilter@7f588bc6, org.springframework.security.web.authentication.logout.LogoutFilter@392af2e0, com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter@3da8a302, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@163cd4a6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d0f03f6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21b75073, org.springframework.security.web.session.SessionManagementFilter@1cbb394b, org.springframework.security.web.access.ExceptionTranslationFilter@19370af1, org.springframework.security.web.access.intercept.AuthorizationFilter@2643c33f]
+[2024-03-01 07:51:28.495] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:51:28.503] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='/v3/api-docs/**']
+[2024-03-01 07:51:28.503] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:51:28.503] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='/swagger-resources/**']
+[2024-03-01 07:51:28.503] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:51:28.503] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='/swagger-ui.html']
+[2024-03-01 07:51:28.503] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:51:28.503] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='/webjars/**']
+[2024-03-01 07:51:28.503] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='sign-api/exception']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:51:28.503] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='sign-api/exception']
+[2024-03-01 07:51:28.503] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:51:28.503] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='/swagger-ui/**']
+[2024-03-01 07:51:28.527] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2024-03-01 07:51:28.541] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port 8080 (http) with context path ''
+[2024-03-01 07:51:28.548] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication Started YamiyamiApplication in 4.152 seconds (process running for 4.462)
+[2024-03-01 07:51:31.134] [INFO ] [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-03-01 07:51:31.134] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2024-03-01 07:51:31.135] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+[2024-03-01 07:51:31.532] [INFO ] [http-nio-8080-exec-5] org.springdoc.api.AbstractOpenApiResource Init duration for springdoc-openapi is: 86 ms
+[2024-03-01 07:51:59.032] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-01 07:51:59.034] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2024-03-01 07:51:59.035] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2024-03-01 07:52:01.811] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication Starting YamiyamiApplication using Java 17.0.10 with PID 9480 (D:\IntelliJProj\yamiyami\target\classes started by khyme in D:\IntelliJProj\yamiyami)
+[2024-03-01 07:52:01.827] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication No active profile set, falling back to 1 default profile: "default"
+[2024-03-01 07:52:02.442] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-03-01 07:52:02.488] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interface.
+[2024-03-01 07:52:02.900] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port 8080 (http)
+[2024-03-01 07:52:02.907] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2024-03-01 07:52:02.908] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2024-03-01 07:52:02.908] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.18]
+[2024-03-01 07:52:02.965] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2024-03-01 07:52:02.966] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 996 ms
+[2024-03-01 07:52:03.074] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-03-01 07:52:03.114] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 6.4.1.Final
+[2024-03-01 07:52:03.137] [INFO ] [main] org.hibernate.cache.internal.RegionFactoryInitiator HHH000026: Second-level cache disabled
+[2024-03-01 07:52:03.274] [INFO ] [main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-03-01 07:52:03.290] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2024-03-01 07:52:03.354] [INFO ] [main] com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Added connection org.mariadb.jdbc.Connection@71262020
+[2024-03-01 07:52:03.356] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2024-03-01 07:52:03.979] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-03-01 07:52:04.998] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-01 07:52:05.186] [INFO ] [main] com.yamidiary.yamiyami.config.security.JwtTokenProvider [init] JwtTokenProvider 내 secretKey 초기화 시작
+[2024-03-01 07:52:05.187] [INFO ] [main] com.yamidiary.yamiyami.config.security.JwtTokenProvider [init] JwtTokenProvider 내 secretKey 초기화 완료
+[2024-03-01 07:52:05.268] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-03-01 07:52:05.430] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2e268c19, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@baf87a5, org.springframework.security.web.context.SecurityContextHolderFilter@36d7e8d2, org.springframework.security.web.header.HeaderWriterFilter@191cf38f, org.springframework.web.filter.CorsFilter@42c9c0a1, org.springframework.security.web.authentication.logout.LogoutFilter@264c9994, com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter@2643c33f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1cbb394b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b4bc7b9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c1fd5aa, org.springframework.security.web.session.SessionManagementFilter@67836d4, org.springframework.security.web.access.ExceptionTranslationFilter@5bbeb9e3, org.springframework.security.web.access.intercept.AuthorizationFilter@50e32998]
+[2024-03-01 07:52:05.577] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='/v3/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:52:05.577] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='/v3/api-docs']
+[2024-03-01 07:52:05.577] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:52:05.577] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='/swagger-resources/**']
+[2024-03-01 07:52:05.577] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:52:05.577] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='/swagger-ui.html']
+[2024-03-01 07:52:05.577] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:52:05.577] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='/webjars/**']
+[2024-03-01 07:52:05.577] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='sign-api/exception']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:52:05.577] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='sign-api/exception']
+[2024-03-01 07:52:05.577] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:52:05.577] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='/swagger-ui/**']
+[2024-03-01 07:52:05.599] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2024-03-01 07:52:05.613] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port 8080 (http) with context path ''
+[2024-03-01 07:52:05.619] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication Started YamiyamiApplication in 4.131 seconds (process running for 4.425)
+[2024-03-01 07:52:09.832] [INFO ] [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-03-01 07:52:09.832] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2024-03-01 07:52:09.833] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+[2024-03-01 07:52:09.951] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtTokenProvider [resolveToken] HTTP 헤더에서 Token 값 추출
+[2024-03-01 07:52:09.951] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 추출 완료 , .token : null
+[2024-03-01 07:52:09.951] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter [doFilterInternal] token 값 유효성 체크 시작
+[2024-03-01 07:52:09.953] [INFO ] [http-nio-8080-exec-3] com.yamidiary.yamiyami.config.security.CustomAuthenticationEntryPoint [commence] 인증 실패로 response.sendError 발생
+[2024-03-01 07:52:40.125] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-01 07:52:40.126] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2024-03-01 07:52:40.128] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2024-03-01 07:52:42.926] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication Starting YamiyamiApplication using Java 17.0.10 with PID 2208 (D:\IntelliJProj\yamiyami\target\classes started by khyme in D:\IntelliJProj\yamiyami)
+[2024-03-01 07:52:42.928] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication No active profile set, falling back to 1 default profile: "default"
+[2024-03-01 07:52:43.672] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-03-01 07:52:43.715] [INFO ] [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+[2024-03-01 07:52:44.205] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port 8080 (http)
+[2024-03-01 07:52:44.214] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2024-03-01 07:52:44.216] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2024-03-01 07:52:44.216] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/10.1.18]
+[2024-03-01 07:52:44.275] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2024-03-01 07:52:44.276] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1168 ms
+[2024-03-01 07:52:44.379] [INFO ] [main] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-03-01 07:52:44.420] [INFO ] [main] org.hibernate.Version HHH000412: Hibernate ORM core version 6.4.1.Final
+[2024-03-01 07:52:44.443] [INFO ] [main] org.hibernate.cache.internal.RegionFactoryInitiator HHH000026: Second-level cache disabled
+[2024-03-01 07:52:44.587] [INFO ] [main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-03-01 07:52:44.605] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2024-03-01 07:52:44.673] [INFO ] [main] com.zaxxer.hikari.pool.HikariPool HikariPool-1 - Added connection org.mariadb.jdbc.Connection@78e043e4
+[2024-03-01 07:52:44.675] [INFO ] [main] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2024-03-01 07:52:45.295] [INFO ] [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-03-01 07:52:46.306] [INFO ] [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-01 07:52:46.495] [INFO ] [main] com.yamidiary.yamiyami.config.security.JwtTokenProvider [init] JwtTokenProvider 내 secretKey 초기화 시작
+[2024-03-01 07:52:46.495] [INFO ] [main] com.yamidiary.yamiyami.config.security.JwtTokenProvider [init] JwtTokenProvider 내 secretKey 초기화 완료
+[2024-03-01 07:52:46.576] [WARN ] [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-03-01 07:52:46.742] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@42c9c0a1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2643c33f, org.springframework.security.web.context.SecurityContextHolderFilter@1cbb394b, org.springframework.security.web.header.HeaderWriterFilter@31a9eaa, org.springframework.web.filter.CorsFilter@3c1fd5aa, org.springframework.security.web.authentication.logout.LogoutFilter@701a79b, com.yamidiary.yamiyami.config.security.JwtAuthenticationFilter@4bfaff23, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12d33d7a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16bbb59c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47bae235, org.springframework.security.web.session.SessionManagementFilter@20e4e27f, org.springframework.security.web.access.ExceptionTranslationFilter@191cf38f, org.springframework.security.web.access.intercept.AuthorizationFilter@2e268c19]
+[2024-03-01 07:52:46.881] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:52:46.881] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='/v3/api-docs/**']
+[2024-03-01 07:52:46.881] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:52:46.881] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='/swagger-resources/**']
+[2024-03-01 07:52:46.881] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:52:46.881] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='/swagger-ui.html']
+[2024-03-01 07:52:46.881] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:52:46.881] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='/webjars/**']
+[2024-03-01 07:52:46.881] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='sign-api/exception']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:52:46.882] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='sign-api/exception']
+[2024-03-01 07:52:46.882] [WARN ] [main] org.springframework.security.config.annotation.web.builders.WebSecurity You are asking Spring Security to ignore Mvc [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2024-03-01 07:52:46.882] [INFO ] [main] org.springframework.security.web.DefaultSecurityFilterChain Will not secure Mvc [pattern='/swagger-ui/**']
+[2024-03-01 07:52:46.904] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2024-03-01 07:52:46.917] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port 8080 (http) with context path ''
+[2024-03-01 07:52:46.923] [INFO ] [main] com.yamidiary.yamiyami.YamiyamiApplication Started YamiyamiApplication in 4.352 seconds (process running for 4.664)
+[2024-03-01 07:52:53.142] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-01 07:52:53.143] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2024-03-01 07:52:53.145] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.

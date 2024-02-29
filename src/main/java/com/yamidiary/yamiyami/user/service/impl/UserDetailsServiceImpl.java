@@ -1,4 +1,4 @@
-package com.yamidiary.yamiyami.user.service;
+package com.yamidiary.yamiyami.user.service.impl;
 
 import com.yamidiary.yamiyami.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -19,6 +19,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         LOGGER.info("[loadUserByUsername] loadUserByUsername 수행, email : {}", username);
-        return userRepository.getByNickname(username);
+        return userRepository.getByEmail(username);
     }
 }

@@ -1,2 +1,9 @@
-package com.yamidiary.yamiyami.config;public class JpaAuditingConfiguration {
+package com.yamidiary.yamiyami.config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+
+@Configuration
+@EnableJpaAuditing
+public class JpaAuditingConfiguration {
 }
